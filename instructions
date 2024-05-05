@@ -1,0 +1,31 @@
+Implement two programs in C/C++/Rust:
+
+* Server program:
+
+     - Initialize a hash table of given size (command line)  - (done)
+
+     - Support insertion of items in the hash table  - (done) 
+
+     - Hash table collisions are resolved by maintaining a linked list
+for each bucket/entry in the hash table                - (done)
+
+     - Supports concurrent operations (multithreading) to eprform
+(insert, read, delete operations on the hash table)    - (done)
+
+     - Use readers-writer lock to ensure safety of concurrent
+operations, try to optimize the granularity - (done)
+
+     - Communicates with the client program using shared memory buffer
+(POSIX shm)                                  - (done)
+
+* Client program:
+
+     - Enqueue requests/operations (insert, read a bucket, delete) to
+the server (that will operate on the the hash table) via shared memory
+buffer (POSIX shm)                                                         - (done)
+
+
+Please send me the code with a Makefile to compile and run the code via
+Github.
+
+Please also include a scalability analysis.
