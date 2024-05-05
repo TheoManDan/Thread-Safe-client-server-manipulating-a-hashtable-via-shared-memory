@@ -10,12 +10,12 @@ calls also the ThreadPool class. Then we enter in a "server logic" in a infinite
 have the "command dispatcher" section. When it receives a command it create a new task (p-thread).
 
 ### the client 
-The client will work in the same segment of shared memory (where the hashmap lives) and will 
-perform a number of commands.
+The client will work in the same segment of shared memory (where the queue of commands lives) and will 
+perform a number of random commands.
 
 ### the hash-table class
 The hashmap class exists in languages such as Java or Python but not in C/C++ so
-we have to do it. It may not be as rich as classical hashmaps but the functions needed 
+we have to implement it. It may not be as rich as classical hashmaps but the functions needed 
 for our use are implemented  
 
 ### the shared memory class
