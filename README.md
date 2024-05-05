@@ -51,10 +51,18 @@ make clean
 
 ## scalability analysis
 
-    Hash Table Size: The scalability of the system could be impacted by the size of the hash table. As the size of the hash table increases, more memory would be required to store the data, and the time complexity of operations such as insertion, deletion, and search might increase, especially in case of collisions.
+    Hash Table Size: The scalability of the system could be impacted by the size of the hash table. 
+    As the size of the hash table increases, more memory would be required to store the data, and 
+    the time complexity of operations such as insertion, deletion, and search might increase, especially in case of collisions.
 
-    Concurrency: The system utilizes multithreading to handle concurrent operations on the hash table. The scalability of the system with respect to concurrency depends on factors such as the number of CPU cores available, the efficiency of thread management by the operating system.
+    Concurrency: The system utilizes multithreading to handle concurrent operations on the hash table. 
+    The scalability of the system with respect to concurrency depends on factors such as the number of 
+    CPU cores available, the efficiency of thread management by the operating system.
 
-    Shared Memory Communication: The use of shared memory is a fast and efficient mean of inter-process communication, but it has limitations in terms of scalability. As the number of clients accessing the shared memory increases, contention for access to the shared memory region may arise, potentially leading to bottlenecks and so on.
+    Shared Memory Communication: The use of shared memory is a fast and efficient mean of inter-process 
+    communication, but it has limitations in terms of scalability. As the number of clients accessing the 
+    shared memory increases, contention for access to the shared memory region may arise, potentially
+    leading to bottlenecks and so on.
 
-    Hardware and Resource Constraints: Ultimately, the scalability of the system is also constrained by hardware limitations such as CPU processing power, memory capacity, and disk I/O bandwidth. 
+    Hardware and Resource Constraints: Ultimately, the scalability of the system is also constrained by 
+    hardware limitations such as CPU processing power, memory capacity, and disk I/O bandwidth. 
